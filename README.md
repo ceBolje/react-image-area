@@ -6,7 +6,7 @@
 
 > React component to select multiple areas/regions of images.
 
-[Live Example](https://byronmunozg.github.io/react-image-area/)
+[Live Example](https://github.com/ceBolje/react-image-area)
 
 ## :books: Table of Contents
 
@@ -21,7 +21,7 @@
 ## :package: Installation
 
 ```bash
-npm i @bmunozg/react-image-area
+npm i @ceboljenpm/react-image-area
 ```
 
 ## :rocket: Usage
@@ -29,7 +29,7 @@ npm i @bmunozg/react-image-area
 > Usage with types
 
 ```jsx
-import { AreaSelector, IArea } from '@bmunozg/react-image-area'
+import { AreaSelector, IArea } from '@ceboljenpm/react-image-area'
 
 const ExampleComponent = () => {
     const [areas, setAreas] = useState<IArea[]>([]);
@@ -172,7 +172,7 @@ const ExampleComponent = () => {
         add a key_
 
         ```jsx
-        import { AreaSelector, IAreaRendererProps } from '@bmunozg/react-image-area'
+        import { AreaSelector, IAreaRendererProps } from '@ceboljenpm/react-image-area'
         // ...
         const customRender = (areaProps: IAreaRendererProps) => {
             if (!areaProps.isChanging) {
