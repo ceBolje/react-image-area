@@ -31,7 +31,7 @@ export default defineConfig(({ command }) => {
                 entry: resolve(__dirname, 'src', 'index.ts'),
                 formats: ['es', 'umd'],
                 fileName: (ext) => `index.${ext}.js`,
-                name: '@cebolje/react-image-area'
+                name: '@ceboljenpm/react-image-area'
             },
             rollupOptions: {
                 external: [

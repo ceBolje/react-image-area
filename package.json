@@ -1,5 +1,5 @@
 {
-  "name": "@cebolje/react-image-area",
+  "name": "@ceboljenpm/react-image-area",
   "description": "React component to select multiple areas/regions of images.",
   "author": "Yaroslav Shelest",
   "contributors": ["Byron Muñoz G. <byron.munoz.godoy@gmail.com> (https://github.com/ByronMunozG)"],
