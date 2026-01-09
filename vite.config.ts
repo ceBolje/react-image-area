@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
-import pkg from './package.json';
 import reactPlugin from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
 import { terser } from 'rollup-plugin-terser';
@@ -32,13 +31,15 @@ export default defineConfig(({ command }) => {
                 entry: resolve(__dirname, 'src', 'index.ts'),
                 formats: ['es', 'umd'],
                 fileName: (ext) => `index.${ext}.js`,
-                name: '@bmunozg/react-image-area'
+                name: '@cebolje/react-image-area'
             },
             rollupOptions: {
                 external: [
-                    ...Object.keys(pkg.peerDependencies),
+                    "react",
+                    "react-dom",
+                    "react/jsx-runtime",
+                    "react/jsx-dev-runtime",
                     /\.stories\.tsx?$/
-                    // add dependecies if exist
                 ],
                 output: {
                     globals: {

@@ -1,10 +1,11 @@
 {
-  "name": "@bmunozg/react-image-area",
+  "name": "@cebolje/react-image-area",
   "description": "React component to select multiple areas/regions of images.",
-  "author": "Byron Muñoz G. <byron.munoz.godoy@gmail.com> (https://github.com/ByronMunozG)",
+  "author": "Yaroslav Shelest",
+  "contributors": ["Byron Muñoz G. <byron.munoz.godoy@gmail.com> (https://github.com/ByronMunozG)"],
   "license": "MIT",
   "private": false,
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -57,9 +58,9 @@
     "vite-plugin-dts": "^0.9.10"
   },
   "peerDependencies": {
-    "@types/react": "^17.0.0 || ^18.0.0",
-    "react": "^17.0.0 || ^18.0.0",
-    "react-dom": "^17.0.0 || ^18.0.0"
+    "@types/react": "^17.0.0 || ^18.0.0 || ^19.0.0",
+    "react": "^17.0.0 || ^18.0.0 || ^19.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0"
   },
   "repository": {
     "type": "git",
