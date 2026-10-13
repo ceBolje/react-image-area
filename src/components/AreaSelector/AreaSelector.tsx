@@ -244,13 +244,14 @@ export const AreaSelector: FunctionComponent<IAreaSelectorProps> = ({
 
     const onDocPointerMoveHandler = useCallback(
         (event: PointerEvent) => {
-            event.preventDefault();
-            event.stopPropagation();
             // resize or move area
             const { isChanging, areaChangeIndex } = areaStatus;
             if (!isChanging) {
                 return;
             }
+
+            event.preventDefault();
+            event.stopPropagation();
             const box = getBox();
             const updatedArea = areas[areaChangeIndex];
             setEventData((currentData) => ({
@@ -280,10 +281,11 @@ export const AreaSelector: FunctionComponent<IAreaSelectorProps> = ({
 
     const onDocPointerDoneHandler = useCallback(
         (event: PointerEvent) => {
-            event.preventDefault();
-            event.stopPropagation();
             const { isChanging, areaChangeIndex } = areaStatus;
             if (isChanging) {
+                event.preventDefault();
+                event.stopPropagation();
+
                 setAreaStatus({
                     isChanging: false,
                     areaChangeIndex: -1
